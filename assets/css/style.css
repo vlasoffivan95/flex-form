@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-article {
+    border:4px solid grey;
+    padding: 30px 20px;    
+    background-color: whitesmoke;
+    margin:25px auto ;
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+.form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.h1-form, .p-form {    
+    margin-top: 20px;
+    color:grey;
+}
+
+.h1-form {
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.h1-form::before, .h1-form::after{
+    content: "";
+    background-color: grey;
+    color:black;    
+    display: inline-block;
+    flex: 2;
+    height: 2px;
+    margin:10px 10px 0 10px;
+}
+
+.p-form {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.mail-password-input, .first-last-name{
+    margin-top: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    min-height: 40px;
+    padding-left: 10px;
+}
+
+.first-last-name {
+    width: 45%;    
+}
+
+.first-last-name-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
