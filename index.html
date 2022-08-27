@@ -24,6 +24,7 @@
             class="first-last-name"
             autofocus
             autocomplete="name"
+            pattern="[A-Za-z]{1,32}"
           />
           <input
             type="text"
@@ -32,32 +33,49 @@
             required
             class="first-last-name"
             autocomplete="name"
+            pattern="[A-Za-z]{1,32}"
           />
         </div>
         <input
-        type="password"
-        name="LastName"
-        placeholder="Last Name"
-        required
-        autocomplete="name"
-        class="mail-password-input"
-      />
-      <input
-      type="password"
-      name="LastName"
-      placeholder="Last Name"
-      required
-      autocomplete="name"
-      class="mail-password-input"
-    />
-    <input
-    type="password"
-    name="LastName"
-    placeholder="Last Name"
-    required
-    autocomplete="name"
-    class="mail-password-input"
-  />
+          type="email"
+          name="Email"
+          placeholder="Email"
+          required
+          autocomplete="email"
+          class="mail-password-input"
+          pattern="^[a-zA-Z0-9]{3,15}@[a-z]{1,64}\.[a-z]{1,64}$"
+        />
+        <input
+          type="password"
+          name="Password"
+          placeholder="Password (at least 5 characters)"
+          required
+          autocomplete="current-password"
+          class="mail-password-input"
+          pattern="[a-zA-Z0-9]{5,32}"
+        />
+        <input
+          type="password"
+          name="ConfirmPasword"
+          placeholder="Confirm Pasword (at least 5 characters)"
+          required
+          autocomplete="current-password"
+          class="mail-password-input"
+          pattern="[a-zA-Z0-9]{5,32}"
+        />
+        <label class="label-for-terms" for="accept-terms">
+          <input
+            id="terms"
+            type="checkbox"
+            name="AcceptTerms"
+            value="user-accept"
+          />
+          <span class="span-form"
+            >I accept the <a href="#" class="link-form">Term of Use</a> &
+            <a href="#" class="link-form">Privacy Policy</a></span
+          >
+        </label>
+        <button href="#" class="button">Register Now</button>
       </form>
     </article>
   </body>

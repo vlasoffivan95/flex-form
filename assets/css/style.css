@@ -59,10 +59,12 @@ body {
     border-radius: 10px;
     min-height: 40px;
     padding-left: 10px;
+    overflow: hidden;
+    font-size: 12px;
 }
 
 .first-last-name {
-    width: 45%;    
+    width: 40%;    
 }
 
 .first-last-name-container {
@@ -70,5 +72,20 @@ body {
     justify-content: space-between;
 }
 
+.label-for-terms {
+    margin: 20px 0;
+}
 
+.button {
+    font-size: 18px;
+    background-color: limegreen;
+    color:white;
+    font-weight: bold;
+    padding: 10px 0;
+    border-radius: 15px;
+}
 
+.button:hover, .button:focus {
+    background-color:white;
+    color:limegreen;
+}
