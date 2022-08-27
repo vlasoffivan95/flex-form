@@ -13,7 +13,8 @@ body {
     padding: 30px 20px;    
     background-color: whitesmoke;
     margin:25px auto ;
-    max-width: 400px;
+    max-width: 500px;
+    min-width: 320px;
     border-radius: 15px;
 }
 
@@ -37,7 +38,6 @@ body {
     
 }
 
-
 .h1-form::before, .h1-form::after{
     content: "";
     background-color: grey;
@@ -49,7 +49,7 @@ body {
 }
 
 .p-form {
-    font-size: 16px;
+    font-size: 20px;
     padding: 10px;
 }
 
@@ -60,7 +60,7 @@ body {
     min-height: 40px;
     padding-left: 10px;
     overflow: hidden;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 .first-last-name {
@@ -96,3 +96,20 @@ body {
 
     
 }
+
+@media screen and (min-width:320px) and (max-width:500px) {
+    .first-last-name-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .first-last-name {
+        width: auto;    
+    }
+
+    .mail-password-input, .first-last-name{
+        font-size: 12px;
+    }
+    .span-form{
+        font-size:12px;
+    }
+    }
